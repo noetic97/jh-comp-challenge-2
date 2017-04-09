@@ -1,1 +1,62 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(235,235, 235)
+}
+header {
+  display: flex;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  height: 150px;
+}
 
+/* navigation */
+nav {
+  display: flex;
+}
+
+nav a {
+  color: rgb(235, 235, 235)
+}
+
+.login-content {
+  display: none;
+}
+
+h1 {
+
+}
+
+.header-logo {
+  height: 50px;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+/* cards */
+.card-container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.share-card{
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+  2px 2px 4px black,
+  -2px -2px 4px black;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-header div img {
+  height: 25px;
+  width: 25px;
+
+}
