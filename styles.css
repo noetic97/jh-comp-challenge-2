@@ -2,53 +2,83 @@ body {
   box-sizing: border-box;
   background-color: rgb(235,235, 235);
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
+
 header {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 25px;
   background-color: rgb(43, 43, 43);
   color: white;
   height: 150px;
 }
 
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#admin-dropdown {
+  color: rgb(40, 180, 255);
+}
+
 /* navigation */
 nav {
+  height: 50px;
   display: flex;
+  align-content: flex-end;
 }
 
 nav a {
   color: rgb(235, 235, 235)
 }
 
+.login-btn {
+  background: url(assets/avatar-white.svg);
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  border: none;
+}
+
 .nav-btn{
+  height: 25px;
+  width: 25px;
+  border: none;
+  margin: 0 10px;
+}
+
+.nav-btn1 {
+  background: url(assets/shapes-blue.svg);
+  background-size: cover;
+
+}
+
+.nav-btn2{
+  background: url(assets/list-blue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 25px;
   width: 25px;
 }
 
-.nav-btn1 {
-  background-image: url(assets/shapes-blue.svg);
-  background-size: auto;
-  /*background-repeat: no-repeat;
-  background-size: cover;*/
-}
-
-.nav-btn2{
-  /*background-image: url();*/
-}
-
 .nav-btn3 {
-  /*background-image: url();*/
+  background: url(assets/avatar-blue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
 }
 
 .login-content {
   display: none;
 }
 
-h1 {
-
-}
-
 .header-logo {
-  height: 50px;
+  height: 45px;
 }
 
 main {
@@ -67,9 +97,10 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow:
-  2px 2px 4px black,
-  -2px -2px 4px black;
+  1px 1px 2px rgb(145, 145, 145),
+  -1px -1px 2px rgb(145, 145, 145);
   margin-bottom: 25px;
+  width: 250px;;
 }
 
 .card-header {
@@ -78,7 +109,7 @@ main {
   height: 150px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 125%;
   filter: brightness(60%);
 }
 
@@ -138,4 +169,33 @@ main {
 
 .card-body {
   padding: 10px;
+}
+
+.card-body div {
+  background-color: rgb(235, 235, 235);
+  padding: 10px 5px;
+  word-wrap: break-word;
+  line-height: 1.25;
+}
+
+.attachments {
+  margin: 5px 0;
+}
+
+.attachment-amount {
+  color: rgb(40, 180, 255);
+  font-size: 30px;
+  margin: 5px;
+}
+
+h4,
+h5,
+h6 {
+  margin: 5px 0;
+}
+
+.time {
+  font-size: 12px;
+  margin: 0 0 15px;
+  color: rgb(145, 145, 145);
 }
