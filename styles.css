@@ -15,6 +15,10 @@ header {
   height: 150px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .logo-box {
   display: flex;
   flex-direction: column;
@@ -99,7 +103,7 @@ main {
   box-shadow:
   1px 1px 2px rgb(145, 145, 145),
   -1px -1px 2px rgb(145, 145, 145);
-  margin-bottom: 25px;
+  margin: 10px 10px 25px 10px;
   width: 250px;;
 }
 
@@ -198,4 +202,13 @@ h6 {
   font-size: 12px;
   margin: 0 0 15px;
   color: rgb(145, 145, 145);
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
