@@ -54,7 +54,7 @@ nav a:hover {
   height: 20px;
   width: 20px;
   border: none;
-  margin: 0 10px;
+  margin: 0 10px 5px 10px;
 }
 
 .nav-btn1 {
@@ -65,18 +65,12 @@ nav a:hover {
 
 .nav-btn2{
   background: url(assets/list-blue.svg);
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 25px;
-  width: 25px;
 }
 
 .nav-btn3 {
   background: url(assets/avatar-blue.svg);
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 25px;
-  width: 25px;
 }
 
 .login-content {
@@ -230,5 +224,13 @@ h6 {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+  }
+
+  .header-logo {
+    height: 40px;
+  }
+
+  .logo-box {
+    font-size: 14px;
   }
 }
