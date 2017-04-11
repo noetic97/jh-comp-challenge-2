@@ -32,12 +32,14 @@ a:link {
 /* navigation */
 nav {
   height: 50px;
-  display: flex;
-  align-content: flex-end;
 }
 
 nav a {
   color: rgb(235, 235, 235)
+}
+
+nav a:hover {
+  color: rgb(40, 180, 255);
 }
 
 .login-btn {
@@ -114,6 +116,9 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 125%;
+}
+
+.card-header:hover {
   filter: brightness(60%);
 }
 
@@ -155,8 +160,14 @@ main {
   width: 50px;
   height: 50px;
   background-color: white;
-  filter: none;
+}
 
+.views-container {
+  text-shadow:
+		-.5px -.5px 0 rgb(145, 145, 145),
+		.5px -.5px 0 rgb(145, 145, 145),
+		-.5px .5px 0 rgb(145, 145, 145),
+		.5px .5px 0 rgb(145, 145, 145);
 }
 
 .card-header div {
@@ -218,6 +229,6 @@ h6 {
   nav a {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
